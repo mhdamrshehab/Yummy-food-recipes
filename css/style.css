@@ -1,0 +1,161 @@
+body{
+    overflow-y:hidden ;
+}
+.socialItem i{
+    cursor: pointer;
+    color: gray;
+    transition: all 0.3s ease-in ;
+}
+.socialItem i:hover{
+    color: #FFCC11;
+}
+.navContent{
+    width: 250px;
+    z-index: 9999999999;
+}
+.nav-social-item{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+.strip-header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    padding-top: 1rem;
+    z-index: 555555555555555;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+.strip-social-icon{
+    padding: inherit;
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.strip-toggel-menu{
+    position: absolute;
+    bottom:50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.strip-header-nav i{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.strip-header-nav i:hover{
+    color: #FFCC11;
+}
+.bgBlack{
+    background-color: black;
+    opacity: 0;
+}
+
+.loadingScreen{
+    display: flex;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55555555555555555;
+}
+.fa-bowl-food{
+    color: #9ee650ab;
+}
+.nav-category{
+    cursor: pointer;
+}
+.hoverItem{
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+.Item{
+    cursor: pointer;
+}
+.hoverInner{
+    background-color: rgba(255,255,255,0.7);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: all 1s ease-in-out;
+
+}
+.hoverItem:hover .hoverInner{
+    transform: translate(0);
+}
+.sm-loading {
+    z-index: 999;
+    inset: 0;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+}
+.click{
+    z-index: 9999;
+}
+
+.search-box input[placeholder]{
+    background-color: #000000;
+    text-align: center;
+}
+.search-text{
+    background-color: #000000;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    border: unset;
+    border-bottom: 1px solid gray;
+
+}
+.search{
+    width: 75%;
+    margin: auto;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    left:0;
+}
+.inpt-text{
+    background-color: #000000;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    border: unset;
+    border-bottom: 1px solid gray;  
+}
+.inpt-text input[placeholder]{
+    background-color: #000000;
+    text-align: center; 
+}
+.inptBtn{
+    background-color: transparent;
+    color: darkred;
+    border: 1px solid darkred;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+.int{
+    background-color: rgb(160, 65, 65);
+    border-radius: 5px;
+    color: white;
+}

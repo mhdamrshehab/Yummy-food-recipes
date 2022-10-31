@@ -1,0 +1,103 @@
+<!-- This code was written by Mohamad Amr Shehab -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZI Yummy</title>
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-black">
+
+    <div class="loadingScreen bg-black  vh-100  justify-content-center align-items-center ">
+        <i class=" fa-5x fa-solid fa-spinner fa-spin text-white"></i>
+    </div>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 ">
+                <div class="navContent bgBlack close-menu position-fixed start-0 top-0 vh-100 py-4  px-3">
+                    <div class="navItem">
+                        <ul class="list-unstyled">
+                            <li class="item1" style="opacity: 0; padding-top: 500px;"><a data-list="search"
+                                    class="nav-category text-decoration-none text-white"
+                                    onclick="searchDisplay()">Search</a></li>
+                            <li class="item1" style="opacity: 0; padding-top: 500px;"><a data-list="categories"
+                                    class="nav-category text-decoration-none text-white"
+                                    onclick="categoryDisplay()">Categories</a></li>
+                            <li class="item2" style="opacity: 0; padding-top: 500px;"><a data-list="a"
+                                    class="nav-category text-decoration-none text-white"
+                                    onclick="areaDisplay()">Area</a></li>
+                            <li class="item3" style="opacity: 0; padding-top: 500px;"><a data-list="i"
+                                    class="nav-category text-decoration-none text-white "
+                                    onclick="ingredientsDisplay()">Ingredients</a></li>
+                            <li class="item6" style="opacity: 0; padding-top: 500px;"><a data-list="contact"
+                                    class="nav-category text-decoration-none text-white"
+                                    onclick="ContacUsDisplay()">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="ss position-absolute ">
+                        <div class="socialItem">
+                            <a><i class="fab fa-facebook-f mx-2  "></i></a>
+                            <a><i class="fab fa-twitter mx-2  "></i></a>
+                            <a><i class="fas fa-globe mx-2  "></i></a>
+                        </div>
+                        <div class="pt-3">
+                            <span class="text-secondary">Copyright Â© 2019 All Rights Reserved.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="strip-header-nav" style="left: 0px;">
+
+                <div class="strip-logo">
+                    <a href="index.html"><img src="Images/logo.png" class="w-100" alt="Logo"></a>
+                </div>
+                <div class="strip-toggel-menu">
+                    <i class="fa fa-align-justify fa-2x"></i>
+                </div>
+
+                <div class="strip-social-icon">
+                    <div class="strip-lang">
+                        <span>
+                            <i class="fas fa-globe "></i>
+                        </span>
+                    </div>
+                    <div class="strip-share">
+                        <span>
+                            <i class="fas fa-share-alt"></i>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    
+    <section class="container p-5">
+        <div class="row p-5 g-4 click">
+
+        </div>
+        <div class=" row search"></div>
+
+        <div class="loadingContainer" style="display: none;">
+            <div class="sm-loading position-absolute ">
+                <i class="fa fa-spinner fa-spin fa-4x"></i>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
